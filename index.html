@@ -93,6 +93,38 @@
         .footer-col { width: 22%; }
         .footer-col h4 { margin-top: 0; margin-bottom: 15px;}
         .footer-col a { color: var(--text-main); text-decoration: none; display: block; margin-bottom: 8px; opacity: 0.8;}
+		/* Адаптация для мобильных устройств */
+        @media (max-width: 768px) {
+            header { padding: 10px 5%; flex-wrap: wrap; gap: 10px; justify-content: center; }
+            nav ul { gap: 10px; }
+            nav a { font-size: 12px; }
+            .user-actions { gap: 10px; }
+            .login-btn { padding: 5px 12px; font-size: 12px; }
+
+            .container { width: 95%; padding: 20px 0; }
+            .hero { flex-direction: column; text-align: center; min-height: auto; padding-top: 20px; }
+            .hero-text { width: 100%; order: 1; }
+            .hero-text h1 { font-size: 28px; }
+            .hero-text p { font-size: 14px; }
+            
+            .char-section { width: 100%; order: 2; height: 320px; margin-top: 30px; }
+            .char-avatar { width: 120px; height: 120px; }
+            .dn-badge { top: -40px; right: 20%; font-size: 12px; padding: 8px 15px; }
+            
+            /* Координаты эмоций для мобилки, чтобы не лезли на текст */
+            .emotion { font-size: 11px; padding: 6px 10px; }
+            #e1 { top: 10px; left: 5%; }
+            #e2 { bottom: 20px; left: 5%; }
+            #e3 { top: -10px; right: 10%; }
+            #e4 { top: 50px; right: -10px; }
+            #e5 { bottom: 0; right: 5%; }
+            #e6 { top: 100px; left: -10px; }
+
+            .catalog-grid { grid-template-columns: 1fr; gap: 20px; }
+            .footer-cols { flex-direction: column; text-align: center; }
+            .footer-col { width: 100%; }
+            .reg-modal { width: 90%; padding: 20px; }
+        }
     </style>
 </head>
 <body>
