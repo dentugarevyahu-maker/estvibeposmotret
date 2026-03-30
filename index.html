@@ -17,57 +17,78 @@
         --transition: all 0.3s ease;
     }
 
-    body { 
-        font-family: var(--font-family); 
-        background-color: var(--bg-color); 
-        color: var(--text-main); 
-        margin: 0; padding: 0; overflow-x: hidden; 
+    body {
+        font-family: var(--font-family);
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
 
-    header { background-color: var(--bg-color); padding: 10px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 1000; flex-wrap: wrap; }
-    .logo { font-size: 22px; font-weight: 700; }
-    .logo span { color: var(--accent-green); }
-    
-    nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 10px; }
-    nav a { text-decoration: none; color: var(--text-main); font-weight: 500; font-size: 13px; }
-
-    .container { width: 90%; margin: 0 auto; padding: 20px 0; }
-    .hero { display: flex; flex-direction: column; align-items: center; text-align: center; }
-    
-    .hero-text { width: 100%; margin-bottom: 30px; }
-    .hero-text h1 { font-size: 32px; line-height: 1.2; margin-bottom: 15px; }
-    .hero-text p { font-size: 16px; margin-bottom: 25px; }
-
-    .char-section { width: 100%; height: 250px; position: relative; margin-top: 20px; }
-    .char-avatar { width: 120px; height: 120px; border-radius: 50%; border: 4px solid white; position: absolute; top: 50%; transform: translateY(-50%); background-size: cover; z-index: 2; }
-    .char-male { left: 15%; }
-    .char-female { right: 15%; }
-
-    .emotion { position: absolute; background: white; padding: 6px 10px; border-radius: 8px; font-size: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); z-index: 3; white-space: nowrap; }
-    
-    #e1 { top: 0; left: 5%; }
-    #e2 { top: 20%; right: 5%; }
-    #e3 { bottom: 10%; left: 0; }
-    #e4 { bottom: 0; right: 10%; }
-    #e5 { top: -20px; right: 30%; }
-    #e6 { bottom: 40%; left: -5%; }
-
-    .catalog-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
-
-    @media (min-width: 768px) {
-        header { padding: 15px 10%; }
-        .logo { font-size: 26px; }
-        nav a { font-size: 16px; }
-        .hero { flex-direction: row; text-align: left; min-height: 80vh; }
-        .hero-text { width: 48%; }
-        .hero-text h1 { font-size: 52px; }
-        .char-section { width: 50%; height: auto; }
-        .char-avatar { width: 200px; height: 200px; position: relative; top: 0; transform: none; }
-        .char-male { margin-right: -40px; left: auto; }
-        .char-female { margin-left: -40px; right: auto; }
-        .catalog-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
-        .emotion { font-size: 15px; padding: 10px 15px; }
+    header {
+        background-color: var(--bg-color);
+        padding: 20px 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--border-color);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
     }
+
+    .logo {
+        font-size: 26px;
+        font-weight: 700;
+        text-decoration: none;
+        color: var(--text-main);
+    }
+
+    .logo span {
+        color: var(--accent-green);
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: var(--text-main);
+        font-weight: 500;
+        transition: var(--transition);
+    }
+
+    nav a:hover {
+        color: var(--accent-green);
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 80vh;
+    }
+
+    .hero-text {
+        width: 50%;
+    }
+
+    .hero-text h1 {
+        font-size: 56px;
+        line-height: 1.1;
+        margin-
 </style>
 </head>
 <body>
